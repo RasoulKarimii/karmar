@@ -1,0 +1,25 @@
+body{
+    direction: rtl;
+    background-color: rgb(254, 206, 206);
+    margin: 0px;
+}
+header{
+    background-color: rgb(65, 210, 55);
+    text-align:center;
+    margin: 5px;
+    height: 55px;
+    font-size: 50px;
+}
+.g-3 needs-validation{
+    background-color: rgb(13, 244, 252);
+}
+/* تنظیمات اضافی برای متن‌ها */
+#main_left h1 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+#main_left p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
