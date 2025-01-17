@@ -15,7 +15,7 @@ if (isset($_POST["Firstname"]) && !empty($_POST["Firstname"]) &&
     $password = htmlspecialchars($_POST["password"]);
     $repassword = htmlspecialchars($_POST["repassword"]);
     if ($password !== $repassword) {
-        echo("<p>رمز عبور و تکرار رمز عبور با هم مطابقت ندارند</p>");
+        print("<p>رمز عبور و تکرار رمز عبور با هم مطابقت ندارند</p>");
     } else {
         echo("<p>نام: " . $Firstname . "</p>");
         echo("<p>فامیل: " . $Lastname . "</p>");
