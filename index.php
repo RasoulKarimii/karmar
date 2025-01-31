@@ -2,6 +2,7 @@
 include("header.html");
 ?>
 <main class="container">
+    <main></main>
     <div class="row">
 
         <div class="col-md-6 d-none d-md-block">

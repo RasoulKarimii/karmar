@@ -2,30 +2,34 @@
 include("header.html");
 ?>
 <?php
-if (isset($_POST["Firstname"]) && !empty($_POST["Firstname"]) &&
-    isset($_POST["Lastname"]) && !empty($_POST["Lastname"]) &&
+if (isset($_POST["name"]) && !empty($_POST["name"]) &&
     isset($_POST["email"]) && !empty($_POST["email"]) &&
-    isset($_POST["Username"]) && !empty($_POST["Username"]) &&
     isset($_POST["password"]) && !empty($_POST["password"]) &&
     isset($_POST["repassword"]) && !empty($_POST["repassword"])) {
-    $Firstname = htmlspecialchars($_POST["Firstname"]);
-    $Lastname = htmlspecialchars($_POST["Lastname"]);
+    $name = htmlspecialchars($_POST["name"]);
     $email = htmlspecialchars($_POST["email"]);
-    $Username = htmlspecialchars($_POST["Username"]);
     $password = htmlspecialchars($_POST["password"]);
     $repassword = htmlspecialchars($_POST["repassword"]);
     if ($password !== $repassword) {
         print("<p>رمز عبور و تکرار رمز عبور با هم مطابقت ندارند</p>");
     } else {
-        echo("<p>نام: " . $Firstname . "</p>");
-        echo("<p>فامیل: " . $Lastname . "</p>");
+        echo("<p>نام: " . $name . "</p>");
         echo("<p>ایمیل: " . $email . "</p>");
-        echo("<p>نام کاربری: " . $Username . "</p>");
         // echo("<p>کارفرما/فریلنسر: " . $a . "</p>");
     }
 } else {
     echo("<p>پر کردن همه فیلدها الزامی است</p>");
 }
+$name=$_POST["name"];
+$email=$_POST["email"];
+$password=$_POST["password"];
+
+$c=mysqli_connect("localhost","root","","login");
+mysqli_query($c,"INSERT INTO `loginn` (`name`, `email`, `password`) 
+VALUES ('$name', '$email', '$password');");
+mysqli_close($c);
+
+echo("ثبت نام شما با موفقیت انجام شد ✅");
 ?>
 
 <?php
