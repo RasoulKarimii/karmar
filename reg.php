@@ -1,5 +1,5 @@
 <?php
-include("header.html");
+include("header.php");
 ?>
 <?php
 if (isset($_POST["name"]) && !empty($_POST["name"]) &&

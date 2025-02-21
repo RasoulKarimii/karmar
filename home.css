@@ -100,4 +100,18 @@ body {
   #button:hover {
     background: rgba(35, 106, 211);
   }
-  
+  #img1,#img2,#img3,#img4,#img5{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+}
+main{
+  background-color: rgb(107, 238, 234);
+  padding: 3px;
+  border-radius: 100px;
+}

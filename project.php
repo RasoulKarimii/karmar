@@ -1,5 +1,5 @@
 <?php
-include("header.html");
+include("header.php");
 ?>
 <main class="container my-4">
     <div class="row">

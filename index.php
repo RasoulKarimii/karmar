@@ -1,12 +1,14 @@
 <?php
-include("header.html");
+include("header.php");
 ?>
 <main class="container">
     <main></main>
     <div class="row">
 
         <div class="col-md-6 d-none d-md-block">
-            <img src="فرمول-تبلیغات-اینترنتی.jpg" alt="تبلیغات اینترنتی" class="img-fluid rounded">
+            <?php
+                include("tabligh.php");
+            ?>
         </div>
 
 
