@@ -1,5 +1,5 @@
 <?php
-include("header.html");
+include("header.php");
 // شامل فایل header.php برای بارگذاری هدر صفحه
 
 
