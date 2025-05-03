@@ -23,17 +23,24 @@ header{
     font-size: 1.2rem;
     line-height: 1.6;
 }
-/* استایل برای بدنه صفحه */
-body {
+.x{
+color: #fff;
 
-  }
+}
+.c{
+background-image: none;
+}
+#c{
+   width: 200px;
+    height: 200px;
+}
   
   /* استایل برای کادر لاگین */
   .login {
     border: 1px solid black;
     width: 400px;
     height: 500px;
-    background: url('WhatsApp-Image-2020-09-12-at-04.34.12.jpeg');
+
     color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
@@ -110,8 +117,27 @@ body {
     border-color: black;
     display: flex;
 }
-main{
-  background-color: rgb(107, 238, 234);
-  padding: 3px;
-  border-radius: 100px;
+main {
+  background-image: url('image_54.jpg');
+  background-size: cover; /* تصویر به اندازه صفحه تغییر سایز می‌کند */
+  background-position: center; /* تصویر در مرکز صفحه قرار می‌گیرد */
+  background-repeat: no-repeat; /* تصویر تکرار نمی‌شود */
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%; /* عرض 100% از صفحه */
+  height: auto; /* ارتفاع بر اساس محتوای داخل تغییر می‌کند */
 }
+
+#sh {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+
+
+@media (max-width: 767px) {
+  #sh {
+      font-size: 14px;
+  }
+}
+

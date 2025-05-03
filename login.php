@@ -1,6 +1,7 @@
 <?php
 include("header.php");
 ?>
+<center>
 <div class="login">
 <form id="form" action="login_1.php" method="post">
     <h1 id="h1">ورود</h1>
@@ -12,6 +13,7 @@ include("header.php");
 </form>
 
 </div>
+<center>
 <?php
 include("footer.html");
 ?>

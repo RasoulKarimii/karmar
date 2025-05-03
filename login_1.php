@@ -1,6 +1,8 @@
 <?php
 include("header.php");
-
+?>
+<center>
+<?php
 if (isset($_POST['email']) && isset($_POST['password'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -11,13 +13,20 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 
     $r = mysqli_fetch_array($m);
     if ($r) {
-        echo("شما با موفقیت وارد شدید");
+        $_SESSION["login"]=true;
+        ?>
+        <script>
+            location.replace("index.php");
+        </script>
+        <?php
     } else {
         echo("ایمیل یا رمز عبور صحیح نیست");
     }
 } else {
     echo "لطفاً ایمیل و رمز عبور را وارد کنید.";
 }
-
+?>
+<center>
+<?php
 include("footer.html");
 ?>

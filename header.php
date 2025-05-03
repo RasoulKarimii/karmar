@@ -6,7 +6,7 @@ session_start();
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>کارمار</title>
     <style type="text/css">
 
 
@@ -20,31 +20,35 @@ session_start();
     <div>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.php">صفحه اصلی</a>
+          <span class="navbar-brand">کارمار</span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="project.php">پروژه</a>
+            <li class="nav-item">
+                <a class="nav-link d-flex justify-content-center align-items-center px-4 py-2 mx-2 text-white bg-dark rounded-3 shadow-lg" href="index.php">صفحه اصلی</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="daste.php">دسته بندی</a>
+                  <a class="nav-link d-flex justify-content-center align-items-center px-4 py-2 mx-2 text-white bg-dark rounded-3 shadow-lg" href="#sh">
+                      درباره ما
+                  </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link d-flex justify-content-center align-items-center px-4 py-2 mx-2 text-white bg-dark rounded-3 shadow-lg" href="project.php">پروژه</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#sh">درباره ما</a>
+                <a class="nav-link d-flex justify-content-center align-items-center px-4 py-2 mx-2 text-white bg-dark rounded-3 shadow-lg" href="daste.php">آموزش</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="re.php">ثبت نام</a>
+                <a class="nav-link d-flex justify-content-center align-items-center px-4 py-2 mx-2 text-white bg-dark rounded-3 shadow-lg" href="re.php">ثبت نام</a>
               </li>
               <?php if(isset($_SESSION["login"])){ ?>
-                <li class="item_menu"><a href="logout.php">خروج</a></li>
-                <?php }else{ ?>
-              <li class="nav-item">
-                <a class="nav-link" href="login.php">ورود</a>
-              </li>
-              <?php } ?>
+            <li class="item_menu d-flex justify-content-center align-items-center px-4 py-2 mx-2 text-white bg-dark rounded-3 shadow-lg"><a href="logout.php">خروج</a></li>
+            <?php }else{ ?>
+            <li class="item_menu d-flex justify-content-center align-items-center px-4 py-2 mx-2 text-white bg-dark rounded-3 shadow-lg"><a href="login.php">ورود</a></li>
+            <?php } ?>
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
