@@ -1,12 +1,10 @@
 <?php
-// شامل فایل header.php برای بارگذاری هدر صفحه
 include('header.php');
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    // اتصال به پایگاه داده
-    $conn = new mysqli('localhost', 'root', '', 'add');
+    $conn = new mysqli('localhost', 'root', '', 'login');
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
@@ -25,6 +23,5 @@ if (isset($_GET['id'])) {
 ?>
 
 <?php
-// شامل فایل footer.php برای بارگذاری فوتر صفحه
 include('footer.php');
 ?>

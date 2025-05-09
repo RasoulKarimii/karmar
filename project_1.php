@@ -20,7 +20,6 @@ $result = $conn->query($sql);
 
 <div class="container my-4">
     <h1>پروژه‌ها</h1>
-    <a href="add_project.php" class="btn btn-success mb-3">افزودن پروژه جدید</a>
     <div class="row">
         <?php
         if ($result->num_rows > 0) {
@@ -30,9 +29,7 @@ $result = $conn->query($sql);
                     <div class="card text-center bg-light">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $row['name']; ?></h5>
-                            <p class="card-text"><?php echo $row['description']; ?></p>
-                            <a href="edit_project.php?id=<?php echo $row['id']; ?>" class="btn btn-warning">ویرایش</a>
-                            <a href="delete_project.php?id=<?php echo $row['id']; ?>" class="btn btn-danger">حذف</a>
+                            <a href="view_project.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">ورود به پروژه</a>
                         </div>
                     </div>
                 </div>
@@ -45,11 +42,10 @@ $result = $conn->query($sql);
     </div>
 </div>
 
-<?php
+<?php $conn->close(); ?>
 
-$conn->close();
-?>
 <center>
+
 <?php
 include("footer.html");
 ?>

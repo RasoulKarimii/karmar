@@ -63,6 +63,9 @@ include("header.php");
                       <input type="password" name="repassword" id="form3Example4cd" class="form-control" />
                     </div>
                   </div>
+                  <input type="radio" name="admin" value="0"> فریلنسر
+                  <input type="radio" name="admin" value="1" checked> کارفرما
+
 
                   <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                     <input  type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-warning btn-lg" value="ثبت نام"/>

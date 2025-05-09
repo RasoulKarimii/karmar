@@ -5,7 +5,7 @@ if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
  
-    $conn = new mysqli('localhost', 'root', '', 'add');
+    $conn = new mysqli('localhost', 'root', '', 'login');
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);

@@ -3,7 +3,7 @@ include("header.php")
 ?>
 <main id="ca" class="container">
     <div class="row text-center">
-        <!-- کارت Python -->
+
         <div class="col-12 col-md-3 mb-4">
             <a href="https://www.python.org" class="card bg-info text-white text-decoration-none">
                 <div class="card-body">
@@ -13,7 +13,6 @@ include("header.php")
             </a>
         </div>
 
-        <!-- کارت PHP -->
         <div class="col-12 col-md-3 mb-4">
             <a href="https://www.php.net" class="card bg-info text-white text-decoration-none">
                 <div class="card-body">
@@ -23,7 +22,6 @@ include("header.php")
             </a>
         </div>
 
-        <!-- کارت C# -->
         <div class="col-12 col-md-3 mb-4">
             <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" class="card bg-info text-white text-decoration-none">
                 <div class="card-body">
@@ -33,7 +31,6 @@ include("header.php")
             </a>
         </div>
 
-        <!-- کارت C++ -->
         <div class="col-12 col-md-3 mb-4">
             <a href="https://isocpp.org/" class="card bg-info text-white text-decoration-none">
                 <div class="card-body">
@@ -43,7 +40,6 @@ include("header.php")
             </a>
         </div>
 
-        <!-- کارت C -->
         <div class="col-12 col-md-3 mb-4">
             <a href="https://en.wikipedia.org/wiki/C_(programming_language)" class="card bg-info text-white text-decoration-none">
                 <div class="card-body">
@@ -53,7 +49,6 @@ include("header.php")
             </a>
         </div>
 
-        <!-- کارت HTML -->
         <div class="col-12 col-md-3 mb-4">
             <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="card bg-info text-white text-decoration-none">
                 <div class="card-body">
@@ -63,7 +58,6 @@ include("header.php")
             </a>
         </div>
 
-        <!-- کارت CSS -->
         <div class="col-12 col-md-3 mb-4">
             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="card bg-info text-white text-decoration-none">
                 <div class="card-body">
@@ -73,7 +67,6 @@ include("header.php")
             </a>
         </div>
 
-        <!-- کارت Java -->
         <div class="col-12 col-md-3 mb-4">
             <a href="https://www.oracle.com/java/" class="card bg-info text-white text-decoration-none">
                 <div class="card-body">
